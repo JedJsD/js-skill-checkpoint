@@ -1,7 +1,11 @@
 // Question 5: Calculating Total Price in User's Cart
 
-function calculateTotalPrice() {
-  // เริ่มเขียนโค้ดตรงนี้
+function calculateTotalPrice(item) {
+  let totalPrice = 0
+  for (let i = 0 ; i < item.length ; i++) {
+    totalPrice += item[i].price * item[i].quantity
+  }
+  return totalPrice
 }
 
 // ตัวอย่างการใช้งาน
